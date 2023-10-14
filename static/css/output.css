@@ -695,6 +695,10 @@ video {
   width: 2rem;
 }
 
+.w-\[320px\]{
+  width: 320px;
+}
+
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
@@ -712,12 +716,28 @@ video {
   max-width: 24rem;
 }
 
+.max-w-xs{
+  max-width: 20rem;
+}
+
+.grow{
+  flex-grow: 1;
+}
+
 .basis-6{
   flex-basis: 1.5rem;
 }
 
 .flex-row{
   flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .place-content-between{
@@ -730,6 +750,14 @@ video {
 
 .justify-center{
   justify-content: center;
+}
+
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
 }
 
 .gap-x-6{
@@ -802,6 +830,21 @@ video {
   border-color: rgb(64 64 64 / var(--tw-border-opacity));
 }
 
+.bg-cyan-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 211 238 / var(--tw-bg-opacity));
+}
+
+.bg-emerald-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 211 153 / var(--tw-bg-opacity));
+}
+
+.bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
 .bg-neutral-700{
   --tw-bg-opacity: 1;
   background-color: rgb(64 64 64 / var(--tw-bg-opacity));
@@ -815,6 +858,16 @@ video {
 .bg-pink-400{
   --tw-bg-opacity: 1;
   background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+}
+
+.bg-purple-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
+}
+
+.bg-teal-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 212 191 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -943,6 +996,18 @@ video {
   letter-spacing: -0.025em;
 }
 
+.text-cyan-100\/90{
+  color: rgb(207 250 254 / 0.9);
+}
+
+.text-emerald-100\/90{
+  color: rgb(209 250 229 / 0.9);
+}
+
+.text-gray-100\/90{
+  color: rgb(243 244 246 / 0.9);
+}
+
 .text-gray-700{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -966,9 +1031,17 @@ video {
   color: rgb(252 231 243 / 0.9);
 }
 
+.text-purple-100\/90{
+  color: rgb(243 232 255 / 0.9);
+}
+
 .text-slate-50{
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+
+.text-teal-100\/90{
+  color: rgb(204 251 241 / 0.9);
 }
 
 .text-transparent{
@@ -1094,6 +1167,10 @@ video {
 
   .md\:m-10{
     margin: 2.5rem;
+  }
+
+  .md\:min-h-\[3em\]{
+    min-height: 3em;
   }
 
   .md\:w-full{
