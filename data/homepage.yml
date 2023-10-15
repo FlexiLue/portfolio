@@ -29,6 +29,6 @@ projects:
         color: "emerald"
       - name: "SqlLite"
         color: "teal"
-    description: "Konezption und Umsetzung einer interaktiven Web-Anwendung, die politische Themen übersichtlich und schnell zusammenfast und chronologisch darstellt."
-    link: "https://flexilue.github.io/Fishermans-friend-landingpage/"
+    description: "Konzeption und Umsetzung einer Android App zum “managen” einer Bierolympiade, welche sich aus verschiedenen Spielen zusammensetzt."
+    link: "https://github.com/Jonnyre/AppDev_SoSe22"
     cover: "beerolymp_cover.png"
