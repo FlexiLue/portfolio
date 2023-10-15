@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html class="scroll-smooth" lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,4 +15,29 @@
         {{end}}
     </div>
 </body>
+<script>
+
+
+function onFormSubmit(event) {
+    event.preventDefault();
+	const data = new FormData(event.target);
+    upload(data);
+}
+
+async function upload(formData) {
+    try {
+        const response = await fetch("https://www.formbackend.com/f/820754e14d1235b0", {
+            method: "POST",
+            body: formData,
+        });
+
+        if(response.ok){
+            document.getElementById('successMessage').classList.remove('hidden')
+        }
+
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+</script>
 </html>
